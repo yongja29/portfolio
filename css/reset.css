@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*폰트 설정*/
+
+	
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+
+
+/* 하위버전을 위한 리셋 */
+html{font:normal 13px/150% 'Nanum Gothic',"맑은 고딕",'Helvetica neu', Arial, 'Arial', 'Apple SD Gothic'; letter-spacing: -0.5px; }
+
+
+header, footer, section, article, aside, nav, hgroup, details, menu, figure, figcaption, summary, canvas {display:block;}
+
+address{font-style: normal;}
+
+
+body {margin:0px; padding:0px; color:#555;}
+h1, h2, h3, h4, h5, h6{font:700 13px/150% 'NanumSquare',"맑은 고딕",'Helvetica neu', Arial, 'Arial', 'Apple SD Gothic'; letter-spacing: -0.5px; margin: 0px; padding:0px; font-weight: normal}
+
+
+
+div, p, ol, ul, li, img, a, form, span, iframe, dl, dt, dd {margin: 0px; padding:0px; }
+
+button {cursor: pointer;}
+
+input, select, button{border: 0; background: none; }
+
+input, textarea, select { color: #555; outline: none;}
+
+
+
+li{list-style:none;}
+a{text-decoration:none; color:#333;}
+table, th, td {margin:0; padding:0; border:0; border-spacing:0; border-collapse:collapse;}
+
+img {border:0px; vertical-align:middle;}
+form, fieldset{margin:0; padding:0; border:none;}
+.hidden{position:absolute; width:0; height:0; font-size:0; line-height:0; visibility:hidden;}
+.none, caption ,legend{display:none;}

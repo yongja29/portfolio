@@ -1,0 +1,209 @@
+@charset "utf-8";
+
+html , body {height: 100%; font-size: 16px; }
+body {overflow: hidden; overflow-y: scroll;}
+
+.bg_basic {background:#3d939e; color: #fff; padding: 5px; }
+
+
+header {
+    display: none; width: 100%; height: 55px; line-height: 55px;
+    position: fixed; top: 0;
+    border-bottom: 1px solid #3d939e;
+    z-index: 20; background: #fff;
+    text-align: center;
+    font-size: 18px;
+    -webkit-transition: -webkit-transform .25s ease-in-out;
+    transition: -webkit-transform .25s ease-in-out;
+    transition: transform .25s ease-in-out;
+    transition: transform .25s ease-in-out, -webkit-transform .25s ease-in-out;
+}
+header.on {
+    -webkit-transform: translate3d(250px,0,0);
+    transform: translate3d(250px,0,0);
+}
+header a {color:#3d939e;}
+.m_menu {
+    line-height: 55px; padding: 0 15px; cursor: pointer;
+    position: absolute; left: 0; top: 0; color:#3d939e;
+}
+
+#navigation_wrap {
+    position: fixed;
+    width: 500px; height: 100%; 
+    float: left; background: url(../img/nav_bg.png) no-repeat center; background-size: 100% 100%; 
+    -webkit-transition: -webkit-transform .25s ease-in-out;
+    transition: -webkit-transform .25s ease-in-out;
+    transition: transform .25s ease-in-out;
+    transition: transform .25s ease-in-out, -webkit-transform .25s ease-in-out;
+}
+#navigation_wrap.on {-webkit-transform: translate3d(250px,0,0);
+    transform: translate3d(250px,0,0); }
+#content_wrap {
+    width: calc(100% - 500px); height: 100%;
+    float: right;
+    -webkit-transition: -webkit-transform .25s ease-in-out;
+    transition: -webkit-transform .25s ease-in-out;
+    transition: transform .25s ease-in-out;
+    transition: transform .25s ease-in-out, -webkit-transform .25s ease-in-out;
+}
+#content_wrap.on {-webkit-transform: translate3d(250px,0,0);
+    transform: translate3d(250px,0,0);}
+
+
+h1 {position: absolute; top: 0; left: 0; width: 100%; padding: 70px 0; text-align: center;}
+h1 > a {display: inline-block; }
+
+nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 100%;
+}
+nav > ul {text-align: left;}
+nav > ul > li { margin: 10px 0;}
+nav > ul > li > a {display: inline-block; font-size: 16px; color: #fff; padding: 10px; opacity: 0.7; }
+nav > ul > li > a:hover {opacity: 1;}
+nav > ul > li > a > i {margin-right: 20px;}
+
+nav > ul > li:last-child {opacity: 0.5;}
+nav > ul > li:last-child > a {cursor: not-allowed; text-decoration: line-through;}
+/* 포트폴리오 페이지 */
+.portfolio_list {overflow: hidden;}
+.portfolio_list > li {
+    overflow: hidden; float: left; width: 33.33%; height: 730px;
+    margin-bottom: 10px;
+}
+.portfolio_list > li:hover {
+    background: #f7f7f7;
+}
+.pf_contents  {
+    padding: 25px; 
+}
+.pf_contents > a { 
+    position: relative; display: inline-block;
+    border: 1px solid #3d939e; margin-bottom: 20px;
+}
+.pf_contents > a > img { width: 100%;}
+.link_bg {
+    position: absolute; bottom: 0; right: 0;
+    padding: 15px 20px; /*height: 40px; line-height: 40px;*/ background: #3d939e;
+    color: #fff;  font-size: 14px;
+}
+.link_bg.link_none {background: #cd1b29;}
+.link_bg > i {
+    vertical-align: middle;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; height: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.pf_detail { width: 100%; font-size: 16px;}
+.pf_detail > dt {
+    font-weight: bold; margin-bottom: 10px;
+    border-left: 5px solid #3d939e;
+    padding-left: 5px;
+}
+.pf_detail > dd {margin-bottom: 20px; padding-left: 25px;}
+.skill_list {overflow: hidden;}
+.skill_list li {
+    float: left; padding: 5px; border-radius: 5px; margin-right: 10px; border: 2px solid #3d939e; margin-bottom: 10px;
+    opacity: 1;
+}
+.skill_list li:hover {opacity: 0.8;}
+.skill_list li{background: #3d939e; color: #fff;}
+
+
+#content_wrap.about h2 {font-weight: bold; font-size: 3em;}
+#content_wrap.about > div {
+    padding: 25px; box-sizing: border-box;
+}
+#content_wrap.about > div:nth-child(even){
+    background: #f7f7f7;
+    
+}
+.about_scetion_1 {
+    text-align: center;
+    background: #fff !important;
+    width: 100% !important;
+    padding: 50px 0 !important;
+}
+.my_profile span {
+    display: inline-block; margin-bottom: 5px;
+    width: 70px; height: 70px;
+    background: #3d939e; border-radius: 50%;
+    color: #fff; font-size: 3em; line-height: 70px;   
+}
+.my_profile p {font-size: 1.2em}
+
+.about_skill_list {
+    overflow: hidden;
+}
+.about_skill_list li {
+    padding: 10px; display: inline-block;
+     -webkit-box-sizing: border-box; box-sizing: border-box; color: #fff; background: #3d939e; opacity: 1;
+    margin-bottom: 5px;
+}
+.about_skill_list li:hover {opacity: 0.8;}
+.about_skill_list li:nth-child(-n+3) {
+    
+}
+
+.about_scetion_3 dl {margin: 15px 0;}
+.about_scetion_3 dl dt {font-weight: bold; }
+
+
+
+/* 반응형 */
+@media all and (max-width:1279px) { 
+    #navigation_wrap {width: 250px;}
+    #content_wrap {width: calc(100% - 250px);}
+    
+    /*포트폴리오 page*/
+    .portfolio_list > li {width: 50%;  }
+}
+@media all and (max-width:1023px){
+    
+    h1 {display: none;}
+    #navigation_wrap {width: 75px;}
+    #content_wrap {width: calc(100% - 75px);}
+    
+    nav > ul {-ms-flex-item-align: start;align-self: flex-start; margin-top: 25px;}
+    nav > ul > li > a { text-align: center;}
+    nav > ul > li > a > span {display: none;}
+    nav > ul > li > a > i {width: 100%;}
+    
+    /*포트폴리오 page*/
+    .portfolio_list > li {width: 100%; height: auto; }
+    
+    #content_wrap.about > div {width: 100%;}
+}
+@media all and (max-width:767px){
+    
+    
+    h1 {display: block;}
+    header {display: block;}
+    #navigation_wrap {left: -250px; width: 250px;}
+    #content_wrap {width: calc(100%); margin-top: 70px;}
+    
+    nav > ul {-ms-flex-item-align: center;align-self: center; margin-top: 0;}
+    nav > ul > li > a { text-align: left;}
+    nav > ul > li > a > span {display: inline-block;}
+    nav > ul > li > a > i {width: auto;}
+    
+    
+    
+}
+@media all and (max-width:479px){
+}
