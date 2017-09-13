@@ -3,7 +3,7 @@
 html , body {height: 100%; font-size: 16px; }
 body {overflow: hidden; overflow-y: scroll;}
 
-.bg_basic {background:#3d939e; color: #fff; padding: 5px; }
+.bg_basic {display: inline-block;background:#3d939e; color: #fff; padding: 5px; }
 
 
 header {
@@ -74,8 +74,8 @@ nav > ul > li > a:hover {opacity: 1;}
 nav > ul > li > a > i {margin-right: 20px;}
 
 nav > ul > li:last-child {opacity: 0.5;}
-nav > ul > li:last-child > a {cursor: not-allowed; text-decoration: line-through;}
-
+nav > ul > li:last-child > a {cursor: not-allowed;}
+nav > ul > li:last-child > a > span {text-decoration: line-through;}
 
 /* index.html */
 #index_nav {
