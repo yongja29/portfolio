@@ -52,8 +52,20 @@ header a {color:#3d939e;}
 
 
 h1 {position: absolute; top: 0; left: 0; width: 100%; padding: 70px 0; text-align: center;}
-h1 > a {display: inline-block; width: 150px; }
+h1 > a {
+    display: inline-block; width: 150px; 
+    position: relative; overflow: hidden;
+    border-radius: 50%;
+}
 h1 > a img {width: 100%;}
+h1 > a span.nav_link {
+    position: absolute; top: -40px; left: 0;
+    background: #3d939e; color: #fff; font-size: 1.2em;
+    width: 100%; padding: 10px 0; opacity: 0.9;
+    border-radius: 50%; -webkit-transition: 0.2s ease; transition: 0.2s ease;
+}
+h1 > a:hover span.nav_link {top: 0;}
+h1 .h1_name {display: block; color: #fff; font-size: 1.3em; margin: 15px;} 
 
 nav {
     display: -webkit-box;
