@@ -30,8 +30,8 @@ header a {color:#3d939e;}
 
 #navigation_wrap {
     position: fixed;
-    width: 500px; height: 100%; 
-    float: left; background: url(../img/nav_bg.png) no-repeat center; background-size: 100% 100%; 
+    width: 500px; height: 100%;
+    float: left; background: url(../img/nav_bg.png) no-repeat center; background-size: 100% 100%;
     -webkit-transition: -webkit-transform .25s ease-in-out;
     transition: -webkit-transform .25s ease-in-out;
     transition: transform .25s ease-in-out;
@@ -53,7 +53,7 @@ header a {color:#3d939e;}
 
 h1 {position: absolute; top: 0; left: 0; width: 100%; padding: 70px 0; text-align: center;}
 h1 > a {
-    display: inline-block; width: 150px; 
+    display: inline-block; width: 150px;
     position: relative; overflow: hidden;
     border-radius: 50%;
 }
@@ -65,7 +65,7 @@ h1 > a span.nav_link {
     border-radius: 50%; -webkit-transition: 0.2s ease; transition: 0.2s ease;
 }
 h1 > a:hover span.nav_link {top: 0;}
-h1 .h1_name {display: block; color: #fff; font-size: 1.3em; margin: 15px;} 
+h1 .h1_name {display: block; color: #fff; font-size: 1.3em; margin: 15px;}
 
 nav {
     display: -webkit-box;
@@ -127,16 +127,16 @@ nav > ul > li:last-child > a > span {text-decoration: line-through;}
 /* portfolio_page.html */
 .portfolio_list {overflow: hidden;}
 .portfolio_list > li {
-    overflow: hidden; float: left; width: 33.33%; height: 730px;
+    overflow: hidden; float: left; width: 33.33%; height: 900px;
     margin-bottom: 10px;
 }
 .portfolio_list > li:hover {
     background: #f7f7f7;
 }
 .pf_contents  {
-    padding: 25px; 
+    padding: 25px;
 }
-.pf_contents > a { 
+.pf_contents > a {
     position: relative; display: inline-block;
     border: 1px solid #3d939e; margin-bottom: 20px;
 }
@@ -185,7 +185,7 @@ nav > ul > li:last-child > a > span {text-decoration: line-through;}
 }
 #content_wrap .about_section_1 {
     text-align: center;
-    background: #fff; 
+    background: #fff;
     width: 100% ;
     padding: 50px 0;
 }
@@ -193,7 +193,7 @@ nav > ul > li:last-child > a > span {text-decoration: line-through;}
     display: inline-block; margin-bottom: 5px;
     width: 70px; height: 70px;
     background: #3d939e; border-radius: 50%;
-    color: #fff; font-size: 3em; line-height: 70px; 
+    color: #fff; font-size: 3em; line-height: 70px;
 }
 .my_profile p {font-size: 1.2em}
 .about_skill_list {overflow: hidden;}
@@ -210,40 +210,40 @@ nav > ul > li:last-child > a > span {text-decoration: line-through;}
 .about_section_4 dl:last-child {margin-bottom: 0; border: none;}
 
 /* 반응형 */
-@media all and (max-width:1279px) { 
+@media all and (max-width:1279px) {
     #navigation_wrap {width: 250px;}
     #content_wrap {width: calc(100% - 250px);}
-    
+
     /*포트폴리오 page*/
     .portfolio_list > li {width: 50%;  }
 }
 @media all and (max-width:1023px){
-    
+
     h1 {display: none;}
     #navigation_wrap {width: 75px;}
     #content_wrap {width: calc(100% - 75px);}
-    
+
     nav > ul {-ms-flex-item-align: start;align-self: flex-start; margin-top: 25px;}
     nav > ul > li > a { text-align: center;}
     nav > ul > li > a > span {display: none;}
     nav > ul > li > a > i {width: 100%;}
-    
+
     /*포트폴리오 page*/
     .portfolio_list > li {width: 100%; height: auto; }
-    
+
     #content_wrap.about > div {width: 100%;}
 }
 @media all and (max-width:767px){
-    
-    
+
+
     h1 {display: block;}
     header {display: block;}
     #navigation_wrap {left: -250px; width: 250px;}
     #content_wrap {width: calc(100%); margin-top: 70px;}
-    
+
     nav > ul {-ms-flex-item-align: center;align-self: center; margin-top: 0;}
     nav > ul > li > a { text-align: left;}
     nav > ul > li > a > span {display: inline-block;}
     nav > ul > li > a > i {width: auto;}
-    
+
 }
