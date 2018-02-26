@@ -120,8 +120,8 @@ nav > ul > li:last-child > a > span {text-decoration: line-through;}
 .index_menu li a {display: block; padding: 10px; color: #fff; opacity: 0.7;}
 .index_menu li a:hover {opacity: 1;}
 .index_menu li a i {margin-right: 10px;}
-.index_menu li:last-child {opacity: 0.5;}
-.index_menu li:last-child > a {cursor: not-allowed; text-decoration: line-through;}
+/* .index_menu li:last-child {opacity: 0.5;}
+.index_menu li:last-child > a {cursor: not-allowed; text-decoration: line-through;} */
 
 
 /* portfolio_page.html */
