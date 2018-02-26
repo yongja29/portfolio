@@ -85,9 +85,9 @@ nav > ul > li > a {display: inline-block; font-size: 16px; color: #fff; padding:
 nav > ul > li > a:hover {opacity: 1;}
 nav > ul > li > a > i {margin-right: 20px;}
 
-nav > ul > li:last-child {opacity: 0.5;}
+/* nav > ul > li:last-child {opacity: 0.5;}
 nav > ul > li:last-child > a {cursor: not-allowed;}
-nav > ul > li:last-child > a > span {text-decoration: line-through;}
+nav > ul > li:last-child > a > span {text-decoration: line-through;} */
 
 /* index.html */
 #index_nav {
