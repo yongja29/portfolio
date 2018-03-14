@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 html , body {height: 100%; font-size: 16px; }
-body {overflow: hidden; overflow-y: scroll;}
+body {overflow: hidden; overflow-y: auto;}
 
 .bg_basic {display: inline-block;background:#3d939e; color: #fff; padding: 5px; }
 
